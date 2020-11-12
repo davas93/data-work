@@ -1,2 +1,2 @@
-*{box-sizing:border-box}body{font-family:sans-serif}.data-work-container{display:flex}
+*{box-sizing:border-box}body{font-family:Calibri, sans-serif}.data-work-container{display:flex;flex-wrap:wrap;column-gap:20px;padding:40px 10px 0px 10px;max-width:1400px;border:1px solid #BDBDBD;border-top:40px solid #455A64;border-radius:10px}.block{padding:20px;margin-bottom:15px;width:320px;height:150px;background-color:#bdbdbd1c;border:1px solid #BDBDBD;border-radius:10px}.block__title{margin:0 0 10px 0;font-size:20px;color:#212121}.block__descr{margin:0}
 /*# sourceMappingURL=styles.css.map */
