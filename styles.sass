@@ -42,19 +42,23 @@
     text-overflow: ellipsis
     font-size: 14px
   &__btn
+    display: flex
+    align-items: center
     background-color: #FF9800
     color: #FFFFFF
-    padding: 7px 17px
+    padding: 4px 12px
+    padding-left: 15px
     border-radius: 9999px
     &:hover
       background-color: lighten(#FF9800, 10)
   &__action-list
     position: absolute
-    bottom: -135px
+    z-index: 10
+    bottom: -145px
     background-color: #FFFFFF
     box-shadow: 3px 2px 11px 2px #C6C6C6
     border-radius: 10px
-    width: 200px
+    width: max-content
     &::after
       content: ''
       position: absolute
@@ -63,8 +67,16 @@
       border: 10px solid transparent
       border-bottom: 10px solid #FFFFFF
   &__action-item
+    display: flex
+    align-items: center
     padding: 5px 15px
     font-size: 14px
     border-bottom: 1px solid #BDBDBD
+    cursor: pointer
+    &:hover
+      color: #FF9800
     &:last-of-type
       border: none
+  &__action-icon
+    margin-right: 10px
+    font-size: 16px
