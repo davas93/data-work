@@ -9,11 +9,13 @@
   border-top: 40px solid #455A64
   border-radius: 10px
 .block
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   position: relative
   padding: 10px 20px
   margin-bottom: 15px
   width: 320px
-  height: 195px
   background-color: #bdbdbd1c
   border-radius: 10px
   box-shadow: 3px 2px 11px 2px #C6C6C6
@@ -28,19 +30,10 @@
     font-size: 18px
     color: #212121
     border-bottom: 1px solid #BDBDBD
-    height: 45px
-    overflow: hidden
-    text-overflow: ellipsis
   &__descr
     margin: 0
     margin-bottom: 20px
     width: 85%
-    height: 45px
-    display: -webkit-box
-    -webkit-line-clamp: 3
-    -webkit-box-orient: vertical
-    overflow: hidden
-    text-overflow: ellipsis
     font-size: 13px
   &__interface
     display: flex
