@@ -42,20 +42,29 @@
     overflow: hidden
     text-overflow: ellipsis
     font-size: 13px
+  &__interface
+    display: flex
+    align-items: center
+    justify-content: space-between
   &__btn
     display: flex
     align-items: center
     background-color: #FF9800
+    font-size: 11px
     color: #FFFFFF
-    padding: 4px 12px
+    padding: 2px 6px
     padding-left: 15px
     border-radius: 9999px
     &:hover
       background-color: lighten(#FF9800, 10)
+    &--distr
+      background-color: #455A64
+      &:hover
+        background-color: lighten( #455A64, 10)
   &__action-list
     position: absolute
     z-index: 10
-    bottom: -145px
+    bottom: -135px
     background-color: #FFFFFF
     box-shadow: 3px 2px 11px 2px #C6C6C6
     border-radius: 10px
