@@ -36,29 +36,42 @@
     </div>
     <!-- /.data-work-interface -->
     <div class="data-list-container">
-      <table class="data-list-table">
-        <tr class="data-list-header">
-          <td class="data-list__checkbox"><input type="checkbox"></td>
-          <td class="data-list__date">Дата создания</td>
-          <td class="data-list__name">Наименование</td>
-          <td class="data-list__descr">Описание</td>
-          <td class="data-list__act">Действия</td>
-        </tr>
-        <tr class="data-list-item">
-          <td class="data-list__checkbox"><input type="checkbox"></td>
-          <td class="data-list__date">17.11.2020</td>
-          <td class="data-list__name">Наименование</td>
-          <td class="data-list__descr">Описание</td>
-          <td class="data-list__act"><i class="material-icons data-list__act-icon">more_vert</i></td>
-        </tr>
-        <tr class="data-list-item">
-          <td class="data-list__checkbox"><input type="checkbox"></td>
-          <td class="data-list__date">17.11.2020</td>
-          <td class="data-list__name">Наименование</td>
-          <td class="data-list__descr">Описание</td>
-          <td class="data-list__act"><i class="material-icons data-list__act-icon">more_vert</i></td>
-        </tr>
-      </table>
+      <header class="data-list-header">
+        <div class="data-list__checkbox"><input type="checkbox"></div>
+        <div class="data-list__date">Дата</div>
+        <div class="data-list__name">Наименование</div>
+        <div class="data-list__descr">Описание</div>
+        <div class="data-list__act">Действия</div>
+      </header>
+      <header class="data-list-item">
+        <div class="data-list__checkbox"><input type="checkbox"></div>
+        <div class="data-list__date">17.11.2020</div>
+        <div class="data-list__name">Наименование</div>
+        <div class="data-list__descr">Описание</div>
+        <div class="data-list__act"><i class="material-icons data-list__act-icon">more_vert</i>
+        <ul class="action-menu">
+          <li class="action-menu__item">
+          <i class="material-icons action-menu__icon">file_download</i>
+            <span class="action-menu__text">Скачать шаблон</span>
+          </li>
+          <li class="action-menu__item">
+            <i class="material-icons action-menu__icon">file_upload</i>
+            <span class="action-menu__text">Загрузить шаблон</span>
+          </li>
+          <li class="action-menu__item">
+            <i class="material-icons action-menu__icon">send</i>
+            <span class="action-menu__text">Отправить данные</span>
+          </li>
+          <li class="action-menu__item">
+            <i class="material-icons action-menu__icon">create</i>
+            <span class="action-menu__text">Редактировать</span>
+          </li>
+          <li class="action-menu__item">
+            <i class="material-icons action-menu__icon">delete</i>
+            <span class="action-menu__text">Удалить</span>
+          </li>
+        </ul></div>
+      </header>
     </div>
     <!-- /.data-list-container -->
   </div>
