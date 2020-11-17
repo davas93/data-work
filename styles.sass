@@ -1,98 +1,69 @@
 @import "settings"
 .data-work-container
-  display: flex
-  flex-wrap: wrap
-  column-gap: 20px
-  padding: 40px 10px 0px 10px
   max-width: 1400px
   border: 1px solid #BDBDBD
-  border-top: 40px solid #455A64
   border-radius: 10px
-.block
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  position: relative
+  overflow: hidden
+.header
   padding: 10px 20px
-  margin-bottom: 15px
-  width: 320px
-  background-color: #bdbdbd1c
-  border-radius: 10px
+  background-color: #455A64
+  color: #FFFFFF
+  font-weight: 700
+  font-size: 16px
+.block
   box-shadow: 3px 2px 11px 2px #C6C6C6
-  &__breadcrumbs
-    display: block
-    font-size: 12px
-    margin-bottom: 5px
+.data-work-interface
+  display: flex
+  justify-content: space-between
+  padding: 10px 10px 30px 10px
+.form-wrapper, .buttons-wrapper
+  display: flex
+  align-items: center
+.filter
+  display: flex
+  align-items: center
+  color: #FF9800
+  cursor: pointer
+.search-form
+  display: flex
+  align-items: center
+  min-height: 30px
+  padding: 2px 8px
+  margin-right: 20px
+  border: 1px solid #BDBDBD
+  border-radius: 9999px
+  overflow: hidden
+  &__input
+    width: 100%
+    height: 100%
+    padding-left: 10px
+    padding-right: 10px
+    border: none
+    outline: none
+  &__icon
+    font-size: 20px
     color: #757575
-  &__title
-    margin: 0 0 10px 0
-    width: 85%
+.btn
+  display: flex
+  align-items: center
+  margin-left: 10px
+  min-height: 30px
+  padding: 2px 8px
+  background-color: #607D8B
+  color: #ffffff
+  border-radius: 9999px
+  &__icon
     font-size: 18px
-    color: #212121
-    border-bottom: 1px solid #BDBDBD
-  &__descr
-    margin: 0
-    margin-bottom: 20px
-    width: 85%
-    font-size: 13px
-  &__interface
-    display: flex
-    align-items: center
-    justify-content: space-between
-  &__btn
-    display: flex
-    align-items: center
-    background-color: #FF9800
-    font-size: 11px
-    color: #FFFFFF
-    padding: 2px 6px
-    padding-left: 15px
-    border-radius: 9999px
-    &:hover
-      background-color: lighten(#FF9800, 10)
-    &--distr
-      background-color: #455A64
-      &:hover
-        background-color: lighten( #455A64, 10)
-  &__action-list
-    position: absolute
-    z-index: 10
-    bottom: -135px
-    background-color: #FFFFFF
-    box-shadow: 3px 2px 11px 2px #C6C6C6
-    border-radius: 10px
-    width: max-content
-    &::after
-      content: ''
-      position: absolute
-      left: 20px
-      top: -20px
-      border: 10px solid transparent
-      border-bottom: 10px solid #FFFFFF
-  &__action-item
-    display: flex
-    align-items: center
-    padding: 5px 20px
-    font-size: 14px
-    border-bottom: 1px solid #BDBDBD
-    cursor: pointer
-    &:hover
-      color: #FF9800
-    &:last-of-type
-      border: none
-  &__action-icon
-    margin-right: 10px
-    font-size: 16px
-  &__notice
-    position: absolute
-    top: 10px
-    right: 10px
+    margin-right: 5px
+  &__text
+    margin-right: 5px
+  &__num
     display: flex
     align-items: center
     justify-content: center
-    width: 40px
-    height: 40px
-    font-size: 14px
+    padding: 4px
+    background-color: lighten(#607D8B, 10)
     font-weight: 700
-    color: #FF9800
-    border-radius: 50%
+    border-radius: 9999px
+  &:hover
+    background-color: lighten(#607D8B, 5)
