@@ -22,6 +22,18 @@
         <div class="filter">
           <i class="material-icons">filter_list_alt</i>
           <span class="filter-status">Не применен</span>
+          <div class="filter-dropdown">
+            <form action="#" class="filter-name">
+              <label for="name__input">По наименованию</label>
+              <input type="text" class="filter-name__input" id="name__input">
+              <label for="date__input">По дате</label>
+              <input type="date" class="filter-name__input" id="date__input">
+              <div class="filter-buttons">
+                <button class="filter-btn filter-btn--cancel">Отмена</button>
+                <button class="filter-btn filter-btn--apply">Применить</button>
+              </div>
+            </form>
+          </div>
         </div>
         <!-- /.filter -->
       </div>
@@ -56,11 +68,7 @@
           </li>
           <li class="action-menu__item">
             <i class="material-icons action-menu__icon">file_upload</i>
-            <span class="action-menu__text">Загрузить шаблон</span>
-          </li>
-          <li class="action-menu__item">
-            <i class="material-icons action-menu__icon">send</i>
-            <span class="action-menu__text">Отправить данные</span>
+            <span class="action-menu__text">Загрузить данные</span>
           </li>
           <li class="action-menu__item">
             <i class="material-icons action-menu__icon">create</i>
@@ -78,4 +86,5 @@
   </div>
   <!-- /.data-work-container -->
 </body>
+  <script src="js/script.js"></script>
 </html>
